@@ -1,0 +1,183 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato:700");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+    to right,
+    hsl(214, 43%, 75%),
+    hsl(248, 44%, 83%)
+  );
+  font-family: "lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.parent {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+
+  margin: 40px;
+  height: auto;
+
+  /* width: 600px; */
+}
+.chaild {
+  background: radial-gradient(
+    circle,
+    rgba(35, 121, 168, 0.6) 50%,
+    rgba(128, 152, 195, 0.3) 90%
+  );
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0 3px 5px rgba(155, 142, 142, 0.3);
+  transition: all 0.5s ease-in-out;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+}
+.chaild h3 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.chaild h4 {
+  padding: 8px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+}
+.container {
+  margin-bottom: 40px;
+}
+.container .container2 h3 {
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #168ad7;
+}
+.dollar {
+  display: inline-block;
+  margin-bottom: 45px;
+  margin-top: 15px;
+}
+
+.dollar h2 {
+  margin-top: -45px;
+  font-size: 55px;
+  color: #000;
+}
+.dollar > sup {
+  margin-left: -100px;
+  width: 17px;
+  font-size: 23px;
+}
+
+.dollar > small {
+  color: rgba(0, 0, 0, 0.3);
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: -2px;
+}
+.chaild2 > .dollar > h2 {
+  color: #3498db;
+}
+.chaild2 > .dollar > sup {
+  color: #3498db;
+}
+.chaild2 > .container > h3 {
+  color: #3498db;
+}
+
+.chaild2 > .action-button > button {
+  padding: 30px 60px;
+  border-radius: 80px;
+  font-size: 22px;
+  font-weight: bolder;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  /* width: 100px; */
+  margin-bottom: -5px;
+  margin-left: 30px;
+  height: 80px;
+}
+
+.chaild2 > .action-button button {
+  background-color: #2386c8;
+  font-size: 23px;
+}
+
+.ribbon {
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+  left: -10px;
+  width: 114px;
+  height: 112px;
+}
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 160px;
+  padding: 10px 0px;
+  background-color: #3498db;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  left: -35px;
+  top: 25px;
+  transform: rotate(-45deg);
+}
+.action-button button {
+  background: transparent;
+  border: 2px solid #3498db;
+  border-radius: 30px;
+
+  cursor: pointer;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 20px 80px;
+  width: 100%;
+  height: 60px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+.action-button button:hover {
+  background-color: #3498db;
+  box-shadow: 0 2px 4px #196090;
+  color: #fff;
+  font-size: 17px;
+}
+
+.list ul {
+  list-style-type: none;
+  margin-bottom: 30px;
+  padding: 10px 0 0 5px;
+}
+.list ul li::before {
+  content: "\2714";
+  color: rgb(65, 57, 57);
+  margin: 10px;
+  padding: 10px;
+}

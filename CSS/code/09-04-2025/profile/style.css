@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  padding: 0 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  height: 100px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+}
+
+@media (min-width: 560px) and (max-width: 776px) {
+  header {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  header nav li {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table-4</title>
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+        <caption>
+          A more complex table-within-a table.
+        </caption>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th rowspan="7">Outer Table</th>
+          <td colspan="5">
+            An inner table showing a variety of headings and data items.
+          </td>
+        </tr>
+        <tr>
+          <th colspan="5">Inner Table</th>
+        </tr>
+        <tr>
+          <th rowspan="2" colspan="2">CORNER</th>
+          <th colspan="3">Head1</th>
+        </tr>
+        <tr>
+          <th rowspan="2">Head2</th>
+          <th colspan="2">Head3</th>
+        </tr>
+        <tr>
+          <td>Head4</td>
+          <td>Head5</td>
+          <th>Head6</th>
+          <!-- <td></td> -->
+        </tr>
+        <tr>
+          <td>A</td>
+          <td rowspan="2">Two Tall</td>
+          <td>
+            <ul>
+              <li>Lists can be table data</li>
+              <li>Images can be table data</li>
+            </ul>
+          </td>
+          <td colspan="2">Two Wide</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="./Checklist-PNG-Image.png" alt="checklist" height="20" />
+          </td>
+          <td>
+            A <a href="">Form</a> in a table : <br />
+            <label for="age"> Your age:</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              placeholder=""
+              min="0"
+              max="150"
+            />
+            <br />
+            What is your favorite ice cream? <br />
+            <select
+              id="icecream"
+              name="icecream"
+              title="Choose an ice cream flavor"
+            >
+              <option value="">Vanilla</option>
+              <option value="" selected>chocolate</option>
+              <option value="">Cherry Garcia</option>
+              <option value="">Pizza Pancake</option>
+              <option value="">Non of the above!</option>
+            </select>
+            <br />
+            <input type="submit" value="ok" />
+            <input type="reset" value="cancle" />
+          </td>
+          <td>
+            No <br />
+            border <br />
+            <strong> Little</strong> <br />
+            Table
+          </td>
+          <td>
+            Multiple <br />
+            line <br />item
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
