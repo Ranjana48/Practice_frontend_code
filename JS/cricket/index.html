@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket-Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div>
+        <h1>Bat Ball Stump Game</h1>
+        <span>
+          <button
+            type="button"
+            title="Bat"
+            class="btn"
+            onclick="calculate('Bat')"
+          >
+            Bat
+          </button>
+
+          <button
+            type="button"
+            title="Ball"
+            class="btn"
+            onclick="calculate('Ball')"
+          >
+            Ball
+          </button>
+
+          <button
+            type="button"
+            title="Stump"
+            class="btn"
+            onclick="
+          randomNumber = Math.random()*3;
+          computerChoice;
+         if(randomNumber>0 && randomNumber <= 1){
+         computerChoice = 'Bat';
+         } else if(randomNumber>1 && randomNumber<=2){
+          computerChoice = 'Ball';
+         } else{
+          computerChoice = 'Stump'
+          }
+          resultMsg;
+          if(computerChoice =='Ball'){
+          resultMsg =  'Computer has Won';
+          } else if(
+           computerChoice == 'Bat'){
+           resultMsg = 'User has won';
+           }else if(
+           computerChoice == 'Stump'){
+           resultMsg =  `it's a tie` ;
+     }
+           alert(`you have chosen Stump. Computer choice is ${computerChoice} and ${resultMsg}`);
+           
+      
+       "
+          >
+            Stump
+          </button>
+        </span>
+      </div>
+      <button type="button" class="btn2">Description</button>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

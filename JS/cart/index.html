@@ -49,9 +49,7 @@
             class="bg-success text-white border-0 btn2"
             onclick="alert('your item has been added to bag');
              cartQuantity = cartQuantity+ 2;
-            document.querySelector(
-        `#cart-summary`
-      ).innerHTML = `Your Bag has <span class = 'highlight'>   ${cartQuantity}   </span> items`;
+
             "
           >
             Add 1+1_Items
@@ -64,9 +62,7 @@
 
     <script>
       let cartQuantity = 0;
-      document.querySelector(
-        `#cart-summary`
-      ).innerHTML = `Your Bag has <span class = "highlight">   ${cartQuantity}   </span> items`;
+      document.querySelector(`#cart-summary`);
     </script>
   </body>
 </html>
