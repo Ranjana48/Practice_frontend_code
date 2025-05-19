@@ -1,0 +1,136 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(9, 4, 4);
+  border: 3px solid rgb(10, 162, 233);
+  box-shadow: 2px 2px 10px rgb(4, 170, 247);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 75vh;
+  width: 60vw;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  box-shadow: 8px 6px 10px rgb(10, 162, 233);
+  position: relative;
+  padding: 20px;
+  font-size: 1.2rem;
+  overflow: hidden;
+  border-radius: 20px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.container:hover:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    90deg,
+    red,
+    yellow,
+    green,
+    cyan,
+    blue,
+    magenta,
+    red
+  );
+  background-size: 400% 400%;
+  z-index: -1;
+  animation: moveBorder 5s linear infinite;
+  border-radius: 18px;
+  box-shadow: 4px 4px 6px rgb(172, 15, 15);
+}
+
+@keyframes moveBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: whitesmoke;
+  color: black;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 28px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* text-align: center; */
+  /* line-height: 60px; */
+}
+
+.progress-radial {
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  width: 200px;
+  height: 150px;
+  border-radius: 50%;
+  /* border: 2px solid #2f3439; */
+  background-color: tomato;
+}
+
+.progress-25 {
+  background-image: linear-gradient(
+      90deg,
+      #030303 50%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0)
+    ),
+    linear-gradient(180deg, #ff6347 50%, black 50%, black);
+}
+
+.progress-50 {
+  background-image: linear-gradient(
+      -90deg,
+      #ff6347 50%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0)
+    ),
+    linear-gradient(270deg, #ff6347 50%, #070707 50%, #030303);
+}
+
+.progress-75 {
+  background-image: linear-gradient(
+      0deg,
+      #ff6347 50%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0)
+    ),
+    linear-gradient(270deg, #ff6347 50%, #060606 50%, #0a0a0b);
+}
+
+.progress-90 {
+  background-image: linear-gradient(
+      54deg,
+      #ff6347 50%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0)
+    ),
+    linear-gradient(270deg, #ff6347 50%, #070707 50%, #060606);
+}

@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+}
+#books {
+  max-width: 1280px;
+  flex-direction: column;
+}
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  transition: all 1s ease;
+}
+.book:hover {
+  scale: 1;
+  box-shadow: 5px 5px orange;
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 576px) {
+  /* #books{
+        
+    } */
+}

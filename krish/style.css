@@ -1,0 +1,369 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+body {
+  background: url(./assets/Ellipse\ BACKGROUND.png);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  /* overflow: hidden; */
+  position: relative;
+}
+.container {
+  height: 50px;
+  display: flex;
+  gap: 100px;
+  margin: 20px;
+}
+.container ul {
+  display: flex;
+  list-style: none;
+  gap: 70px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 1190px;
+  margin-top: 2px;
+  text-decoration: none;
+}
+.container ul li a {
+  text-decoration: none;
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  font-size: 35px;
+  text-align: center;
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: 'JetBrains Mono', monospace; */
+  /* font-family: 'Source Code Pro', monospace; */
+  font-family: "Courier New", monospace;
+  /* font-family: Consolas, monospace; */
+  /* font-family: Inconsolata, monospace; */
+  /* font-family: 'Ubuntu Mono', monospace; */
+}
+.main-content h1 {
+  text-shadow: 0 0 10px 10px #00d0ff;
+}
+.fa-brands {
+  font-size: 50px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.fa-brands:hover {
+  color: white;
+  transform: scale(1.4);
+  transform-origin: center;
+  opacity: 1;
+}
+.fa-python {
+  left: 1260px;
+  top: 210px;
+}
+.fa-python:hover {
+  color: #3776ab;
+}
+.fa-java {
+  left: 505px;
+  top: 450px;
+}
+.fa-java:hover {
+  color: #5382a1;
+}
+.fa-css {
+  left: 620px;
+  top: 210px;
+}
+.fa-css:hover {
+  color: #663399;
+}
+.fa-html5 {
+  left: 540px;
+  top: 700px;
+}
+.fa-html5:hover {
+  color: #e34f26;
+}
+.fa-js {
+  left: 1370px;
+  top: 450px;
+}
+.fa-js:hover {
+  color: #f7df1e;
+}
+.fa-php {
+  top: 710px;
+  left: 1330px;
+}
+.fa-php:hover {
+  color: #777bb4;
+}
+.fa-css3-alt {
+  left: 720px;
+  top: 896px;
+}
+.fa-css3-alt:hover {
+  color: #264de4;
+}
+.fa-node-js {
+  left: 1160px;
+  top: 896px;
+}
+.fa-node-js:hover {
+  color: #8cc84b;
+}
+.fa-react {
+  left: 940px;
+  top: 70px;
+}
+.fa-react:hover {
+  color: #61dafb;
+}
+.fa-angular {
+  left: 427px;
+  top: 310px;
+}
+.fa-angular:hover {
+  color: #dd0031;
+}
+.fa-vuejs {
+  left: 1080px;
+}
+.fa-vuejs:hover {
+  color: #42b883;
+}
+.fa-git {
+  left: 380px;
+  top: 620px;
+}
+.fa-git:hover {
+  color: #f05032;
+}
+.fa-github {
+  left: 490px;
+  top: 850px;
+}
+.fa-github:hover {
+  color: #181717;
+}
+.fa-docker {
+  left: 580px;
+  top: 70px;
+}
+.fa-docker:hover {
+  color: #2496ed;
+}
+.fa-laravel {
+  left: 1300px;
+  top: 70px;
+}
+.fa-laravel:hover {
+  color: #ff2d20;
+}
+.fa-rust {
+  left: 1460px;
+  top: 310px;
+}
+.fa-rust:hover {
+  color: #474747;
+}
+.fa-npm {
+  left: 1480px;
+  top: 620px;
+}
+.fa-npm:hover {
+  color: #cb3837;
+}
+.fa-yarn {
+  left: 1380px;
+  top: 850px;
+}
+.fa-yarn:hover {
+  color: #2c8ebb;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  overflow: visible; /* important for hover effect to show fully */
+  gap: 0; /* optional - ensures no extra space */
+}
+
+.card {
+  position: relative;
+  margin-left: -80px; /* overlap amount */
+  z-index: 1;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  width: 250px;
+  height: 310px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  font-size: 4em;
+}
+.card img {
+  height: auto;
+  width: 100px;
+  position: relative;
+  top: -10px;
+}
+.para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  font-size: 30px;
+}
+.lang-card-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-card {
+  width: 80px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.lang-card .label {
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+  transform: rotate(180deg);
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  margin: 0 23px;
+  font-size: 25px;
+}
+
+.lang-card .inner {
+  position: absolute;
+  inset: 0;
+  background: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  transform: translateY(100%) rotate(-5deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.lang-card:hover {
+  width: 300px;
+  transform: scale(1.05) rotate(-3deg);
+  z-index: 10;
+}
+
+.lang-card:hover .inner {
+  transform: translateY(0) rotate(0deg);
+  opacity: 1;
+}
+
+.lang-card:hover .label {
+  opacity: 0;
+}
+
+/* Language specific backgrounds */
+.python {
+  background-color: #00b4d8;
+}
+.java {
+  background-color: #f77f00;
+}
+.css {
+  background-color: #c084fc;
+}
+.js {
+  background-color: #999271;
+}
+.php {
+  background-color: #468faf;
+}
+.tailwind {
+  background-color: #2ec4b6;
+}
+.angular {
+  background-color: #ef233c;
+}
+.react {
+  background-color: #00ffff;
+}
+.rust {
+  background-color: #7f4f24;
+}
+.HTML {
+  background-color: #ff6b6b;
+}
+
+.lang-card img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.lang-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.lang-card p {
+  font-size: 0.9rem;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100px); /* Start position */
+  animation: orbit 15s linear infinite;
+}
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translate(-100px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-100px) rotate(-360deg);
+  }
+}

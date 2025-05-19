@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.dp {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+}
